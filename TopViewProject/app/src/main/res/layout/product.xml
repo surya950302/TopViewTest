@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/cardview_light_background"
+        android:defaultFocusHighlightEnabled="true"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/prd_img"/>
+            <TextView
+                android:id="@+id/prd_name"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/prd_img"
+                android:text="Name"
+                android:textSize="30dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prd_price"
+
+                android:layout_toRightOf="@+id/prd_img"
+                android:layout_below="@+id/prd_name"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:id="@+id/quanti"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prd_price"
+                android:layout_toRightOf="@+id/prd_img"
+                android:visibility="invisible"
+                android:textSize="30dp"
+                android:text="Quantity"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/prd_quantity"
+                android:layout_width="100dp"
+                android:visibility="invisible"
+                android:layout_height="30dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/prd_price"
+                android:layout_toRightOf="@id/quanti"
+                android:backgroundTint="#7E7E7E"
+                android:paddingLeft="30dp"
+                android:layout_marginBottom="5dp">
+
+            </Spinner>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
